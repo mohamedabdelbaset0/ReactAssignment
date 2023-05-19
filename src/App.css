@@ -32,7 +32,214 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.panel {
+  background-color: #f9f9f9;
+  width: 330px;
+  height: 100vh;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  background-color: #070927;
+  /* #070927 */
+}
+
+.section {
+  padding-bottom: 20px;
+  background-color: #0f1332;
+}
+
+.section-title {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #4ba3df;
+  color: white;
+
+}
+
+.section-subtitle {
+  color: white;
+  padding: 0px 10px 5px 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-top: 20px;
+  border-bottom: 1px solid #363751;
+}
+
+li .child {
+  margin-top: 0px;
+  border-left: 1px solid #363751;
+  border-bottom: 0px;
+}
+
+
+a {
+  /* display: block; */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  vertical-align: middle;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+a:hover {
+  color: #ddddff;
+}
+
+/* input[type="checkbox"] {
+  display: none;
+} */
+
+label {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+ul ul {
+  margin-left: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Styling for expanded menu items */
+input[type="checkbox"]:checked+label {
+  content: "▼";
+}
+
+ul {
+  margin-top: 10px;
+}
+
+input[type="checkbox"]:checked+label+ul {
+  display: block;
+}
+
+/* hr.solid {
+  border-top: 1px solid #bbb;
+  margin: 0;
+  padding: 0;
+} */
+
+/* check box*/
+.checkbox {
+  -webkit-appearance: none;
+  /*hides the default checkbox*/
+  height: 20px;
+  width: 20px;
+  position: relative;
+  vertical-align: middle;
+  transition: 0.10s;
+  /* background-color: #FE0006; */
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  border-radius: 3px;
+  outline: 1px solid #fff;
+
+}
+
+.checkbox:checked {
+  outline: none;
+  background-color: #0E9700;
+}
+
+.checkbox:checked:before {
+  content: "✔";
+}
+
+.checkbox:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* side menu header*/
+.sideMenuHeader {
+  background-color: #141732;
+  color: #fff;
+  font-weight: 700;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: xx-large;
+  /* text-align: center; */
+}
+
+
+.inlineblock {
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+  width: 80%;
+}
+
+.right {
+  text-align: right;
+  width: 20%;
+}
+
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+
+.homePage {
+  color: #fff;
+  background-color: #1a2742;
+  flex: 1;
+  padding: 20px;
+
+}
+.sideMenuHeader svg{
+  margin-right: 25px;
+}
+.HomeTitle {
+  font-size: xxx-large;
+  padding: 10px;
+}
+.summary{
+  font-size: larger;
+margin-top: 80px;
+  
+}
+.contact a,.summary a{
+  padding: 0;
+vertical-align: top;
+margin-left: 0px;
+color: #5887ec;
+}
+.contact svg{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.dataSource{
+  margin-top: 80px;
+
+}
+.dataSource button{
+  margin-top: 20px;
+  margin-right: 5px;
 }
